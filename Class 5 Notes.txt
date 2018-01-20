@@ -58,5 +58,9 @@ git push - pushes to github (after repo set up)
 
 || git notes
 
-initialize -> stage(any time you want a file tracked) [git add] -> commit [git commit] -> push(to git)
+initialize -> stage( any time you want to add a file to the initialized local repo) [git add] -> commit [git commit -m ""] -> make new repo on git -> push(to git);
+
+.gitingnore -> hidden from git push
+
+
 

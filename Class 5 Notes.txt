@@ -1,5 +1,5 @@
 Git / Github
-Local vs external
+Local version control vs external storage of various files.
 
 8 bits = byte
 
@@ -62,5 +62,8 @@ initialize -> stage( any time you want to add a file to the initialized local re
 
 .gitingnore -> hidden from git push
 
+fork - creates complete copy of repo
+branch - single piece of the code used to work in a team
+pull requests - someone wants to change/contribute to your code
 
 

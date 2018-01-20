@@ -1,0 +1,32 @@
+#title {
+  color: darkgreen;
+  font-family: georgia;
+  text-align: center;
+}
+
+#subTitle {
+  font-family: georgia;
+  text-align: center;
+}
+
+#suggestion {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 19px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  color: black;
+}

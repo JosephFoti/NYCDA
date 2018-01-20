@@ -1,0 +1,62 @@
+Git / Github
+Local vs external
+
+8 bits = byte
+
+
+
+-- Keywords --
+
+$ pwd - print working directory | present working directory
+clear - clears screen
+cd - change directory
+
+ls - list 
+ls -l - list longform
+ls -t - list by last access
+ls -alt - all, langform, list by last update
+| [directory],[read,write,execute]owner,[read,write,execute]staff,[read,write,execute]everyone
+
+ls *[searchPrase] - searches based on criteria
+ls -a - show all files
+
+. - current directory
+.. - parent directory 
+| ../.. takes you back two parents
+
+mkdir - make a directory [folder]
+touch - make file
+touch .[filename] - make hidden file
+~ - takes you to home directory
+rm - remove
+rm -r - remove folder
+rm -rf - force remove folder
+cp [originalFileName], [copyFileName] - copy
+mv [originalFileName] [newFileName] - renames file and 'moves' it into the same folder
+mv [originalFileName] [~/Desktop/newLocation] - Move to location
+vi - edits file, "i", :x to save and exit
+less - views file info, q to get out
+man [command] - opens manual page for command
+
+git init - initialize folder tracking
+git config --global user.name "[NameString]" - Global configuration for local username
+git config --global user.email "[emailString]" - Global configuration for local user email
+git status - All your files in init'ed directory and their status
+git add -A OR git add . - adds all changed/new file
+git add [fileName] one file
+git commit
+git remote add origin [github repo url] - defines server for upload (has to be in git init'ed directory)
+
+git push -u origin master - pushes to github (first time you set up repo).
+git push - pushes to github (after repo set up)
+
+
+
+
+
+
+
+|| git notes
+
+initialize -> stage(any time you want a file tracked) [git add] -> commit [git commit] -> push(to git)
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<button id="btn" class="btn btn-default">
+  click
+</button>
+
+  <script type="text/javascript">
+    console.log('Hello Hudson');
+    alert("hello");
+    prompt("who are you");
+    confirm('are you sure?');
+
+
+    var btn = document.getElementById("btn");
+    btn.style.backgroundColor = "yellow"
+
+    btn.addEventListener('click',function(){
+      alert('click');
+    })
+  </script>
+  </body>
+</html>

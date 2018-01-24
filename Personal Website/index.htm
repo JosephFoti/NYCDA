@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+    <style media="screen">
+    .photoGall > .container > .row > div {
+      margin: auto 0;
+      padding-bottom: 30px;
+    }
+      img {
+        width: 100%;
+      }
+      .logo {
+          height: 70px;
+          width: initial;
+          margin-bottom: 10px;
+          float: left;
+      }
+      nav {
+        width: 98%;
+        height: 80px;
+      border-bottom: 1px solid #0000000d;
+      margin: 0 1%;
+      }
+
+    .port div {
+    text-align: center;
+    margin: 20px 0;
+    height: calc(50vh - 80px);
+    }
+
+    .title {
+      font-family: futura;
+      font-weight: 100;
+      line-height: 35px;
+      font-size: 25px;
+      padding-top: 10px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+    .about {
+        border-top: 1px solid #0000000d;
+        padding-top: 20px;
+    }
+    img.portItem {
+    position: relative;
+    top: calc(25vh - 100px);
+    }
+
+    .about img {
+    height: 20vw;
+    margin: auto;
+    text-align: center;
+    display: inherit;
+    border-radius: 50%;
+    width: auto;
+      }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+      .about img {
+        width: 50%;
+        height: auto;
+        margin: 20px 25%;
+      }
+
+      img.portItem {
+        width: 80%;
+        max-height: 90px;
+      }
+
+    }
+
+
+    </style>
+  </head>
+  <body>
+<div class="hpWrap">
+  <div class="header">
+    <nav>
+      <img src="/Users/Joe/Desktop/NYCDA/Personal Website/Logo-23.png" class="logo" alt="">
+      <div class="title">
+        Joseph Foti
+      </div>
+      <div class="subtitle">
+        web design // graphic design // photography
+      </div>
+    </nav>
+  </div>
+  <div class="main">
+
+    <div class="container-fluid">
+      <div class="row align-middle port">
+        <div class="col-md-1 d-none d-md-block">
+
+        </div>
+        <div class="col-md-5 .hvr-rectangle-out">
+          <img class="portItem" src="../Personal Website/PortItems-05.svg" alt="">
+        </div>
+        <div class="col-md-5">
+          <img class="portItem" src="../Personal Website/PortItems-06.svg" alt="">
+        </div>
+        <div class="col-md-1 d-none d-md-block">
+
+        </div>
+        <div class="col-md-1 d-none d-md-block">
+
+        </div>
+        <div class="col-md-5">
+          <img class="portItem" src="../Personal Website/PortItems-07.svg" alt="">
+        </div>
+        <div class="col-md-5">
+          <img class="portItem" src="../Personal Website/PortItems-08.svg" alt="">
+        </div>
+        <div class="col-md-1 d-none d-md-block">
+
+        </div>
+      </div>
+
+      <div class="container-fluid about">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-8">
+                <h2>About Me</h2>
+                <p>Joseph Foti is a Front End Web Designer, Developer, Graphic Designer and Photographer. He graduated Cum Laude from Marist, Florence Campus, with a BS in Digital Media. Joe has 8 years of photographic and artistic experience and 3 years of coding experience including 6 months at a part-time coding bootcamp, the New York Academy of Code and Design Javascript Intensive. Joe grew up on the Lower East Side of New York City, but has also lived in Florence Italy and Cleveland Ohio. Joe is a traveler, a half-assed vegetarian, a story junkie, gamer, and binge-watcher.</p>
+              </div>
+              <div class="col-lg-4">
+                <img src="/Users/Joe/Desktop/NYCDA/Personal Website/Headshot.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="photoGall">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta2.jpg" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta3.jpg" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta4.jpg" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta5.jpg" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta6.jpg" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta7.jpg" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta8.png" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta9.png" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta10.png" class="galItem">
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <img src="../Personal Website/Photographs from Instagram/insta11.png" class="galItem">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+
+  </div>
+</div>
+  </body>
+</html>

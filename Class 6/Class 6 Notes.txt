@@ -1,0 +1,26 @@
+Languages
+
+HARD CODED
+- C++
+- C
+- Java
+- C#
+
+
+FRONT END
+-HTML
+-CSS
+-JavaScript
+-React
+-Angular
+-Ruby on Rails
+
+
+BACK END
+-Web Server
+-Python
+-Java
+-R
+
+
+Variables, Logic, Loops, Data-types [string number boo array], Class, Objects

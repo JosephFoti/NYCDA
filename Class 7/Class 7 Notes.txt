@@ -1,0 +1,31 @@
+Alternate variable types
+
+let - limited scope variable
+cont - variable that you don't want to change
+
+Math.random();
+0-0.999_
+
+Math.pow([int],[exponent]);
+
+Array.pop() - Removes last item in array
+Array.shift() - Removes first item in array
+Array.unshift() - Adds item to beginning of array
+Array.push() - Adds item to end of array
+Array.join([string]) - joins items of array, separated by [string];
+String.split([string]) - splits string by character;
+Array.reverse() - reverses list;
+
+Objects
+- No index, use key in bracket notation object["key"] or object.key
+- if key has a space, you must use brackets
+
+- Object.key([object]) - lists keys
+- Object.key([values]) - lists values
+
+
+
+
+
+About Me -
+Joseph Foti is a Front End Web Designer, Developer, Graphic Designer and Photographer. He graduated Cum Laude from Marist, Florence Campus, with a BS in Digital Media. Joe has 8 years of photographic and artistic experience and 3 years of coding experience including 6 months at a part-time coding bootcamp, the New York Academy of Code and Design Javascript Intensive. Joe grew up on the Lower East Side of New York City, but has also lived in Florence Italy and Cleveland Ohio. Joe is a traveler, a half-assed vegetarian, a story junkie, gamer, and binge-watcher.

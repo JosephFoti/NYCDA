@@ -1,0 +1,22 @@
+Class 8
+
+Conditionals
+
+Template Literal - allows you to print a variable in a string with a var spacebar wrapped in `` -(grave).
+
+alert(`your variable was not less than 10. It was ${x}`)
+
+ECMA Script,
+ES6/ES 2015
+
+Arrow function
+
+var hello = () => console.log('Hello World')
+
+Loops
+
+For loop
+
+for(i=0(initial value),i<x(condition),i++ increment){
+go
+}

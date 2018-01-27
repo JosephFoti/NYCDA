@@ -5,89 +5,14 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./scripts/index.js">
 
+    </script>
     <style media="screen">
-    .photoGall > .container > .row > div {
-      margin: auto 0;
-      padding-bottom: 30px;
-    }
-      img {
-        width: 100%;
-      }
-      .logo {
-          height: 70px;
-          width: initial;
-          margin-bottom: 10px;
-          float: left;
-      }
-      nav {
-        width: 98%;
-        height: 80px;
-      border-bottom: 1px solid #0000000d;
-      margin: 0 1%;
-      }
-
-    .port div {
-    text-align: center;
-    margin: 20px 0;
-    height: calc(50vh - 80px);
-    }
-
-    .title {
-      font-family: futura;
-      font-weight: 100;
-      line-height: 35px;
-      font-size: 25px;
-      padding-top: 10px;
-    }
-
-    .subtitle {
-      font-size: 12px;
-      font-weight: 100;
-      text-transform: uppercase;
-    }
-    .about {
-        border-top: 1px solid #0000000d;
-        padding-top: 20px;
-    }
-    img.portItem {
-    position: relative;
-    top: calc(25vh - 100px);
-    }
-
-    .about img {
-    height: 20vw;
-    margin: auto;
-    text-align: center;
-    display: inherit;
-    border-radius: 50%;
-    width: auto;
-      }
-
-    h2 {
-        text-transform: uppercase;
-    }
-
-
-
-
-
-@media screen and (max-width:576px) {
-
-      .about img {
-        width: 50%;
-        height: auto;
-        margin: 20px 25%;
-      }
-
-      img.portItem {
-        width: 80%;
-        max-height: 90px;
-      }
-
-    }
 
 
     </style>
@@ -112,10 +37,13 @@
         <div class="col-md-1 d-none d-md-block">
 
         </div>
-        <div class="col-md-5 .hvr-rectangle-out">
-          <img class="portItem" src="../Personal Website/PortItems-05.svg" alt="">
+        <div class="col-md-5 portCon">
+          <object type="image/svg+xml" class="portItem" data="../Personal Website/PortItems-05.svg"><!--fallback--></object>
+
+          <!-- <img class="portItem svg" src="../Personal Website/PortItems-05.svg" alt=""> -->
+          <div class="bkgAni"></div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 portCon">
           <img class="portItem" src="../Personal Website/PortItems-06.svg" alt="">
         </div>
         <div class="col-md-1 d-none d-md-block">
@@ -124,10 +52,10 @@
         <div class="col-md-1 d-none d-md-block">
 
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 portCon">
           <img class="portItem" src="../Personal Website/PortItems-07.svg" alt="">
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 portCon">
           <img class="portItem" src="../Personal Website/PortItems-08.svg" alt="">
         </div>
         <div class="col-md-1 d-none d-md-block">

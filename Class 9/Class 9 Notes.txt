@@ -1,0 +1,16 @@
+Class 9 Notes
+
+DOM
+
+document.getElementsByClassName() - stores as an array always
+document.getElementsByTagName();
+document.getElementById();
+
+document.querySelector("") - selects first element matching tag
+
+Events
+
+onclick - single attribution
+
+addEventListener - add multiple
+

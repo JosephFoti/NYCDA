@@ -28,14 +28,14 @@ btn.onclick = function(){
     ticker = 0;
   }
 
+  img.setAttribute('src',gifSRC)
+  var lastGif = gifSRC;
+
   // RANDOM IMAGES
   // var gifSRC = imgs[Math.floor(Math.random()*5)];
   // while (lastGif == gifSRC) {
   //   gifSRC = imgs[Math.floor(Math.random()*5)];
   // }
-
-  img.setAttribute('src',gifSRC)
-  var lastGif = gifSRC;
 }
 
 document.body.addEventListener('keypress',function(e){

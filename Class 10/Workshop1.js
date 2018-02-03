@@ -50,7 +50,7 @@ btn.onclick = function() {
 
 
 document.body.addEventListener('keypress',function(e){
-  var x = String.fromCharCode(e.keyCode)
+  var x = String.fromCharCode(e.keyCode);
   kt.innerHTML += x;
 
 

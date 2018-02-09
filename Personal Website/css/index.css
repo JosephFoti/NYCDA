@@ -82,7 +82,24 @@ h2 {
 }
 
 
+.col-md-5.portCon {
+    padding-top: 0%;
+}
 
+.outer {
+    width: 100% !important;
+    display: table;
+    margin: 0px !important;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+svg.portItem {
+    max-height: 110px;
+}
 
 
 @media screen and (max-width:576px) {

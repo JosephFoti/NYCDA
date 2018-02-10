@@ -1,0 +1,22 @@
+h1 {
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background: #0cc3e3;
+}
+
+body label {
+    font-family: sans-serif;
+    color: white;
+}
+
+h4 {
+    font-family: sans-serif;
+    color: white;
+}
+
+span {
+    color: red;
+}

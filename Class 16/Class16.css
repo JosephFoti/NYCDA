@@ -1,0 +1,23 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+div {
+  opacity: .75;
+}
+
+.dragBox {
+    width: 49px;
+    height: 49px;
+    border: 1px solid #7f7f7f;
+    margin: -1px 0px;
+    float: left;
+}

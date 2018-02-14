@@ -25,18 +25,23 @@ height: calc(50vh - 80px);
 }
 
 .title {
-  font-family: futura;
-  font-weight: 100;
-  line-height: 35px;
-  font-size: 25px;
-  padding-top: 10px;
+    font-family: lato;
+    font-weight: 600;
+    line-height: 35px;
+    font-size: 25px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .subtitle {
-  font-size: 12px;
-  font-weight: 100;
-  text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: lato;
+    letter-spacing: 2px;
 }
+
 .about {
     border-top: 1px solid #0000000d;
     padding-top: 20px;
@@ -79,6 +84,8 @@ width: auto;
 
 h2 {
     text-transform: uppercase;
+    font-family: lato;
+    font-weight: 900;
 }
 
 
@@ -101,6 +108,25 @@ svg.portItem {
     max-height: 110px;
 }
 
+h6.soon {
+    position: absolute;
+    bottom: 5px;
+    width: calc(100% - 30px);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+
+
+p {
+    font-family: lato;
+    font-weight: lighter;
+}
+
 
 @media screen and (max-width:576px) {
 
@@ -113,6 +139,10 @@ svg.portItem {
   img.portItem {
     width: 80%;
     max-height: 90px;
+  }
+  .portCon {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
   }
 
 }

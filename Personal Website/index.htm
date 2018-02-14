@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
@@ -37,7 +38,7 @@
         <div class="col-md-1 d-none d-md-block">
 
         </div>
-        <div class="col-md-5 portCon">
+        <div class="col-md-5 portCon" id="pc1">
 
           <div class="outer">
             <div class="inner">
@@ -91,6 +92,64 @@
             </div>
           </div>
           <div class="bkgAni"></div>
+
+        </div>
+
+        <div class="col-md-5 portCon" id="pc2">
+          <div class="outer">
+            <div class="inner">
+              <a href="/photography">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="portItem" viewBox="0 0 288.2 110.9" style="enable-background:new 0 0 288.2 110.9;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#000089;}
+                  	.st1{fill:#FFFFFF;}
+                  	.st2{opacity:0.31;fill:#320D0D;stroke:#4F4F4F;stroke-miterlimit:10;}
+                  	.st3{fill:#204582;}
+                  	.st4{opacity:7.000000e-02;fill:#FF0D0D;}
+                  </style>
+                  <g id="Large">
+                  	<g>
+                  		<path class="st3" d="M33.8,1c4.9,0,9,0.6,12.3,3.4c3.6,3.1,4.5,7.4,4.5,10.5c0,6.9-4.3,13.7-15.4,13.7h-4.8v21.2H25V1H33.8z
+                  			 M30.4,23.4h4.5c6.4,0,10.3-3.2,10.3-8.8c0-7.7-7.2-8.5-10.7-8.5h-4V23.4z"/>
+                  		<path class="st3" d="M63.7,20.8h25V1h5.4v48.8h-5.4V25.9h-25v23.8h-5.4V1h5.4V20.8z"/>
+                  		<path class="st3" d="M104.1,25.4c0-14.5,11.3-25.2,25.4-25.2s25.4,10.7,25.4,25.2c0,14.5-11.3,25.2-25.4,25.2
+                  			C115.3,50.6,104.1,39.9,104.1,25.4z M109.6,25.4c0,11.2,8.8,20.1,19.8,20.1s19.8-8.9,19.8-20.1c0-11.2-8.8-20.1-19.8-20.1
+                  			S109.6,14.2,109.6,25.4z"/>
+                  		<path class="st3" d="M174.2,6.1v43.6h-5.4V6.1h-11.8V1H186v5.1H174.2z"/>
+                  		<path class="st3" d="M188.1,25.4c0-14.5,11.3-25.2,25.4-25.2s25.4,10.7,25.4,25.2c0,14.5-11.3,25.2-25.4,25.2
+                  			S188.1,39.9,188.1,25.4z M193.7,25.4c0,11.2,8.8,20.1,19.8,20.1c11,0,19.8-8.9,19.8-20.1c0-11.2-8.8-20.1-19.8-20.1
+                  			C202.5,5.3,193.7,14.2,193.7,25.4z"/>
+                  		<path class="st3" d="M246.2,22.3h16.1v5.4h-16.1V22.3z"/>
+                  		<path class="st3" d="M25.4,83.1h24.2v0.5c0,5.9-2.1,14.9-7.5,20.5s-11.6,6.7-17.4,6.7c-5.8,0-12.1-1-17.8-6.8
+                  			c-2.9-2.9-7.2-8.8-7.2-18.6c0-8,2.9-14.3,7-18.5c6-6.2,13.4-7.1,19.2-7.1c4,0,9.1,0.7,13.7,3.7c3.3,2.2,6.1,5.6,7.9,8.7l-10.2,5.5
+                  			c-1-1.9-2.4-3.9-4.3-5.3c-2.2-1.6-4.7-2.3-7.5-2.3c-4.5,0-7.7,1.5-10.1,3.9c-2.7,2.9-4.2,7-4.2,11.5c0,5.6,2,9.1,4.1,11.2
+                  			c2.9,2.9,6.1,3.8,9.9,3.8c4.8,0,7.4-1.7,8.5-2.6c0.4-0.3,2.6-2.2,3.5-5.8H25.4V83.1z"/>
+                  		<path class="st3" d="M75.1,61c6.2,0,10.1,2,12.4,4.2c2,2,4.2,5.5,4.2,10.9c0,3.1-0.7,6.9-3.8,9.9c-1.7,1.6-4.1,3.1-6.8,3.7l15,20
+                  			H82.4L69.3,90.5v19.2H58V61H75.1z M69.3,83.1h2.6c2,0,4.8-0.2,6.7-2.1c0.8-0.8,1.8-2.3,1.8-4.8c0-2.8-1.3-4.2-2.3-5
+                  			c-1.8-1.4-4.8-1.5-6.2-1.5h-2.6V83.1z"/>
+                  		<path class="st3" d="M131.9,100.5h-18.4l-3.7,9.2H98L117.7,61H128l19.2,48.8h-11.7L131.9,100.5z M128.8,91.9l-6-16.4l-6.1,16.4
+                  			H128.8z"/>
+                  		<path class="st3" d="M169.9,61c4.2,0,8.9,0.6,12.8,4c4.2,3.7,4.8,8.5,4.8,11.8c0,6.1-2.3,9.6-4.2,11.5c-3.9,3.9-9,4.3-12.4,4.3
+                  			h-6.9v17.1h-11.3V61H169.9z M163.9,83.4h4c1.5,0,4.2-0.1,6.1-1.8c1-1,1.8-2.7,1.8-4.8c0-2-0.7-3.7-1.8-4.8
+                  			c-1.7-1.6-4.1-1.8-6.3-1.8h-3.8V83.4z"/>
+                  		<path class="st3" d="M205.8,79.6h19.4V61h11.3v48.8h-11.3V89.1h-19.4v20.7h-11.3V61h11.3V79.6z"/>
+                  		<path class="st3" d="M259.3,87l-17.5-26h13.3l9.8,15.1l9.8-15.1H288l-17.5,26v22.7h-11.3V87z"/>
+                  	</g>
+                  </g>
+                  <g id="Layer_2">
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="bkgAni"></div>
+
+        </div>
+
+        <div class="col-md-1 d-none d-md-block">
+
+        </div>
+        <div class="col-md-1 d-none d-md-block">
 
         </div>
 
@@ -152,65 +211,11 @@
               </a>
             </div>
           </div>
+          <h6 class="soon">Coming Soon</h6>
           <div class="bkgAni"></div>
 
         </div>
-        <div class="col-md-1 d-none d-md-block">
 
-        </div>
-        <div class="col-md-1 d-none d-md-block">
-
-        </div>
-        <div class="col-md-5 portCon">
-          <div class="outer">
-            <div class="inner">
-              <a href="./photography">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="portItem" viewBox="0 0 288.2 110.9" style="enable-background:new 0 0 288.2 110.9;" xml:space="preserve">
-                  <style type="text/css">
-                  	.st0{fill:#000089;}
-                  	.st1{fill:#FFFFFF;}
-                  	.st2{opacity:0.31;fill:#320D0D;stroke:#4F4F4F;stroke-miterlimit:10;}
-                  	.st3{fill:#204582;}
-                  	.st4{opacity:7.000000e-02;fill:#FF0D0D;}
-                  </style>
-                  <g id="Large">
-                  	<g>
-                  		<path class="st3" d="M33.8,1c4.9,0,9,0.6,12.3,3.4c3.6,3.1,4.5,7.4,4.5,10.5c0,6.9-4.3,13.7-15.4,13.7h-4.8v21.2H25V1H33.8z
-                  			 M30.4,23.4h4.5c6.4,0,10.3-3.2,10.3-8.8c0-7.7-7.2-8.5-10.7-8.5h-4V23.4z"/>
-                  		<path class="st3" d="M63.7,20.8h25V1h5.4v48.8h-5.4V25.9h-25v23.8h-5.4V1h5.4V20.8z"/>
-                  		<path class="st3" d="M104.1,25.4c0-14.5,11.3-25.2,25.4-25.2s25.4,10.7,25.4,25.2c0,14.5-11.3,25.2-25.4,25.2
-                  			C115.3,50.6,104.1,39.9,104.1,25.4z M109.6,25.4c0,11.2,8.8,20.1,19.8,20.1s19.8-8.9,19.8-20.1c0-11.2-8.8-20.1-19.8-20.1
-                  			S109.6,14.2,109.6,25.4z"/>
-                  		<path class="st3" d="M174.2,6.1v43.6h-5.4V6.1h-11.8V1H186v5.1H174.2z"/>
-                  		<path class="st3" d="M188.1,25.4c0-14.5,11.3-25.2,25.4-25.2s25.4,10.7,25.4,25.2c0,14.5-11.3,25.2-25.4,25.2
-                  			S188.1,39.9,188.1,25.4z M193.7,25.4c0,11.2,8.8,20.1,19.8,20.1c11,0,19.8-8.9,19.8-20.1c0-11.2-8.8-20.1-19.8-20.1
-                  			C202.5,5.3,193.7,14.2,193.7,25.4z"/>
-                  		<path class="st3" d="M246.2,22.3h16.1v5.4h-16.1V22.3z"/>
-                  		<path class="st3" d="M25.4,83.1h24.2v0.5c0,5.9-2.1,14.9-7.5,20.5s-11.6,6.7-17.4,6.7c-5.8,0-12.1-1-17.8-6.8
-                  			c-2.9-2.9-7.2-8.8-7.2-18.6c0-8,2.9-14.3,7-18.5c6-6.2,13.4-7.1,19.2-7.1c4,0,9.1,0.7,13.7,3.7c3.3,2.2,6.1,5.6,7.9,8.7l-10.2,5.5
-                  			c-1-1.9-2.4-3.9-4.3-5.3c-2.2-1.6-4.7-2.3-7.5-2.3c-4.5,0-7.7,1.5-10.1,3.9c-2.7,2.9-4.2,7-4.2,11.5c0,5.6,2,9.1,4.1,11.2
-                  			c2.9,2.9,6.1,3.8,9.9,3.8c4.8,0,7.4-1.7,8.5-2.6c0.4-0.3,2.6-2.2,3.5-5.8H25.4V83.1z"/>
-                  		<path class="st3" d="M75.1,61c6.2,0,10.1,2,12.4,4.2c2,2,4.2,5.5,4.2,10.9c0,3.1-0.7,6.9-3.8,9.9c-1.7,1.6-4.1,3.1-6.8,3.7l15,20
-                  			H82.4L69.3,90.5v19.2H58V61H75.1z M69.3,83.1h2.6c2,0,4.8-0.2,6.7-2.1c0.8-0.8,1.8-2.3,1.8-4.8c0-2.8-1.3-4.2-2.3-5
-                  			c-1.8-1.4-4.8-1.5-6.2-1.5h-2.6V83.1z"/>
-                  		<path class="st3" d="M131.9,100.5h-18.4l-3.7,9.2H98L117.7,61H128l19.2,48.8h-11.7L131.9,100.5z M128.8,91.9l-6-16.4l-6.1,16.4
-                  			H128.8z"/>
-                  		<path class="st3" d="M169.9,61c4.2,0,8.9,0.6,12.8,4c4.2,3.7,4.8,8.5,4.8,11.8c0,6.1-2.3,9.6-4.2,11.5c-3.9,3.9-9,4.3-12.4,4.3
-                  			h-6.9v17.1h-11.3V61H169.9z M163.9,83.4h4c1.5,0,4.2-0.1,6.1-1.8c1-1,1.8-2.7,1.8-4.8c0-2-0.7-3.7-1.8-4.8
-                  			c-1.7-1.6-4.1-1.8-6.3-1.8h-3.8V83.4z"/>
-                  		<path class="st3" d="M205.8,79.6h19.4V61h11.3v48.8h-11.3V89.1h-19.4v20.7h-11.3V61h11.3V79.6z"/>
-                  		<path class="st3" d="M259.3,87l-17.5-26h13.3l9.8,15.1l9.8-15.1H288l-17.5,26v22.7h-11.3V87z"/>
-                  	</g>
-                  </g>
-                  <g id="Layer_2">
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="bkgAni"></div>
-
-        </div>
         <div class="col-md-5 portCon">
           <div class="outer">
             <div class="inner">
@@ -270,6 +275,7 @@
 
             </div>
           </div>
+          <h6 class="soon">Coming Soon</h6>
           <div class="bkgAni"></div>
 
         </div>

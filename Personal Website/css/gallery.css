@@ -36,6 +36,7 @@ nav {
 
 .galItem {
   width: 100%;
+  cursor: pointer;
 }
 
 .graphGall .galItem {

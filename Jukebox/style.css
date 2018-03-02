@@ -99,3 +99,13 @@ left: 0px;
 display: block;
     padding: 20px;
 }
+
+
+.queue {
+  float:right;
+}
+
+.inlinePlay {
+  float:right;
+  
+}

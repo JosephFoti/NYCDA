@@ -1,0 +1,22 @@
+Promise States,
+pending - waiting for call fulfilled/rejected
+fulfilled - settled and confirmed;
+rejected - settled and not confirmed
+
+var promise = new Promise(function(resolve, reject){
+	//perform action
+	//this could be any synchronous or asynchronous operation
+
+	// if error
+	reject(errorFunction);
+
+	//if everything went well;
+	resolve(result);
+	// Store your data into a var
+})
+
+promise instance then calls function on successful result, used to parse the prev. stored data.
+
+[promiseInstance].then(
+	//do something with your data
+);

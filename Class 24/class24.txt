@@ -1,0 +1,3 @@
+process -> references console in node
+argv -> virtual arguments to be taken from terminal and pushed to .js file
+process.argv -> creates an array of virtual arguments including node path, file path, and all defined argvs

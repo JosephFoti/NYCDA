@@ -9,6 +9,7 @@ let track5 = new Audio('./music/Neptune Estate.mp3');
 let track6 = new Audio('./music/Out Getting Ribs.mp3');
 let track7 = new Audio('./music/03 Youth.mp3');
 
+
 //Create array of track collection
 let tracks = [track1,track2,track3,track4,track5,track6,track7];
 // console.log(tracks);
@@ -169,6 +170,7 @@ var queueExecuter = function(x){
 
     })
   }
+
   }
 
 }

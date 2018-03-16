@@ -1,0 +1,29 @@
+Moving data between custom modules uses export and require. 
+
+FS - file system used for writing and running files. Branch of core modules. FS.write file writes files and calls back for errors. If success, err = null/undefined. readFile reads content of file and returns it in data var.
+
+Node and core modules are globally accessible
+
+Development server runs on port 8080, needs to require http and create the server in the terminal.
+when running, to end the run use control-c.
+
+
+Keywords --------------------------/
+
+module.exports = {arr} --> lets use this version
+
+export.[varName] = varVal; -> exports data to other files
+
+const [varName] = require([./fileName]) -> imports data from other files
+
+fs.writeFile([fileName],[data],[callBack fn(err){}]) -> writes file using file system built in module of node.
+
+fs.readFile([fileName],[encoding-type],[callBack fn(err,data)]);
+
+JSON.parse([data]) -> parses string as JSON object
+
+npm -> node package manager
+
+Status Code 200 -> connection
+
+request([url],[function](err, response, body))

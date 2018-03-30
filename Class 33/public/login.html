@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="loginWrap" method="POST" action="/login">
+      <!-- action declairs what file we want to evaluate our code -->
+        <h2>Username</h2><input type="text" name="username" id="in1">
+        <!-- name calls out to the body parser -->
+        <h2>Password</h2><input type="password" name="password" id="in2">
+      <button value="submit">Sign-in</button>
+    </form>
+    <style media="screen">
+
+      input {
+        float: left;
+      }
+
+      h2 {
+        width: fit-content;
+        margin: 0px;
+        float: left;
+        padding-right: 15px;
+        font-size: 16px;
+      }
+
+      div {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+      }
+
+    </style>
+
+  </body>
+</html>

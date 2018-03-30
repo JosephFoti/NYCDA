@@ -1,0 +1,18 @@
+Express replaces Http, framework for server creation it seems.
+Routing methods -- creates custom links
+
+
+request - an object housing all of the reauest info, what url was matched, body of request, parameters, query.
+
+
+ Keywords -----------------------------------------------------/
+
+npm init --yes -> confirms all default package settings
+
+router.method(path,handler)
+[app].get('/a-url-string/',[fn req,res])
+
+
+pathing regex in Express
+takes ()?+*;
+can create an array of paths that take you to the same endpoint. (['/google','/asdfasdf','/adsf']);

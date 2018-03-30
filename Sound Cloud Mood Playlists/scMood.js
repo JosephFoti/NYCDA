@@ -8,7 +8,6 @@ var currentIndex;
 
 // Step 1 initialize our sc key -----------------------------------------------------/
 
-var play = document.querySelector("#play");
 SC.initialize ({
  client_id: 'ebe2d1362a92fc057ac484fcfb265049'
 });
@@ -38,6 +37,9 @@ let Track = function(id,html,index,dur,details,playlist) {
 // Step 3 get data -----------------------------------------------------/
 
 let stack = [];
+//stores all data from JSON
+// NOTE add unique positions for both data calls
+
 var getSongs = new Promise(function(resolve,reject){
 // Call both sets of data
 $.getJSON('http://api.soundcloud.com/playlists/468828561?client_id=ebe2d1362a92fc057ac484fcfb265049',function(data){
@@ -189,8 +191,11 @@ let check = setInterval(function(){
 
     // assign click event to element
     $('.songItem').eq(i).click(function(){
+
+        // if there is a new click event clear the current song so that the function will call as if there is no current play
         currentlyPlaying = undefined;
         currentIndex = undefined;
+
         // clearInterval(songDuration);
         // streams the track, establishes currentlyPlaying, continues playing playlist
         // launch player function
@@ -265,6 +270,7 @@ function queue(x) {
 
 // Step 7 write interface links -------------------------------------?
 
+// var play = document.querySelector("#play");
 
 var pauseBtn = $('#pause');
 var playBtn = $('#play');

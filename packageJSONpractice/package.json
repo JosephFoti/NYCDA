@@ -1,0 +1,12 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "description": "my test package",
+  "main": "my-app.js",
+  "scripts": {
+    "test": "console.log('test')"
+  },
+  "author": "Joe",
+  "license": "ISC",
+  "dependencies": {}
+}

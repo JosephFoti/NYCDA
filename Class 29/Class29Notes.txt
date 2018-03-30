@@ -1,0 +1,20 @@
+Events in Node
+
+
+
+
+EventEmitter built in module for allowing event listening
+emit -> listener -> callback function
+
+Keywords ----------------------------------------------/
+
+const EventEmitter = require('events') -> requires EventEmitter module. Acts as a class.
+const myEmitter = new EventEmitter(); -> instantiates new emitter.
+
+EventEmitter.on -> listener method, part of events module. Looks for emitter with corresponding trigger.
+EventEmitter.once -> listens once.
+EventEmitter.removeListener("[trigger]",[fn]]);
+
+emitter.emit('triggerName'); -> emitts a trigger to activate a listener
+
+listener.on('triggerName',[callback fn]);

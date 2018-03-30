@@ -7,6 +7,29 @@ Node and core modules are globally accessible
 Development server runs on port 8080, needs to require http and create the server in the terminal.
 when running, to end the run use control-c.
 
+package.json ---------------------/
+
+defines what packages your package depends on
+defines the name and version of your package
+defines what file gets executed when the package is required
+holds licensing info
+gives author and repository information
+optionally defines scripts and tasks (ie, nom run [task]);
+
+npm init
+creates a package.json for your project
+interactive prompts for information
+
+Node modules --------------------/
+
+---- core -----
+fs - includes events, classes and functions needed to work with file input / output
+
+http - includes events classes and functions needed to create an http server
+
+--- 3rd party ---
+express
+
 
 Keywords --------------------------/
 
@@ -16,14 +39,41 @@ export.[varName] = varVal; -> exports data to other files
 
 const [varName] = require([./fileName]) -> imports data from other files
 
+
+
 fs.writeFile([fileName],[data],[callBack fn(err){}]) -> writes file using file system built in module of node.
 
 fs.readFile([fileName],[encoding-type],[callBack fn(err,data)]);
 
-JSON.parse([data]) -> parses string as JSON object
+fs.readDirectory()
 
-npm -> node package manager
+fs.unlink(['./filePath'], [callBack fn(err)]) -> erase file
+
+
+
+JSON.parse([data]) -> parses string as JSON object
 
 Status Code 200 -> connection
 
+
+
+
+npm -> node package manager
+
+npm init -> makes package
+
+npm install [something] --save -> applies to package.json (local)
+
+npm install -g [something] -> global install
+
+npm ls -> lists installed packages in local folder
+
+npm ls --depth=[level in heirachy] -> lists folder of a certaint level of depth
+
+npm uninstall [name] -> uninstall
+
+
+
 request([url],[function](err, response, body))
+
+

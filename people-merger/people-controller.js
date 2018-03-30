@@ -1,0 +1,44 @@
+const fs = require('fs');
+
+var data1,data2,fullData;
+
+let promise = new Promise(function(res,rej){
+  fs.readFile('./people1.json','utf-8',function(err,data){
+    // console.log(data);
+    data1 = JSON.parse(data);
+    res(data1);
+  });
+}).then(x=>{
+  fs.readFile('./people2.json','utf-8',function(err,data){
+    data2 = JSON.parse(data);
+    fullData = [...data1,...data2];
+    // console.log(fullData);
+  });
+}).catch(x=>{
+  console.log(x);
+});
+
+
+console.log(fullData);
+// fullData = fullData.toString
+let promise2 = new Promise(function(res,rej){
+
+  let check = setInterval(function(){
+    if (fullData) {
+      fullData.sort();
+      fs.writeFile('./peopleComplete.txt',fullData,'ascii', err=>{
+        if (err) throw err;
+        console.log('file is writen');
+      });
+
+      fs.writeFile('./peopleComplete.json',fullData, 'utf-8', err=>{
+        if (err) throw err;
+        console.log('json is written');
+      });
+
+    }
+
+    console.log(fullData);
+  },1000);
+
+})

@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-var data1,data2,fullData;
+var data1,data2,fullData,rawData;
 
 let promise = new Promise(function(res,rej){
   fs.readFile('./people1.json','utf-8',function(err,data){
@@ -18,20 +18,18 @@ let promise = new Promise(function(res,rej){
   console.log(x);
 });
 
-
-console.log(fullData);
-// fullData = fullData.toString
 let promise2 = new Promise(function(res,rej){
 
   let check = setInterval(function(){
     if (fullData) {
-      fullData.sort();
-      fs.writeFile('./peopleComplete.txt',fullData,'ascii', err=>{
+      clearInterval(check);
+      let sort = fullData.sort();
+      fs.writeFile('./peopleComplete.txt',sort,'ascii', err=>{
         if (err) throw err;
         console.log('file is writen');
       });
 
-      fs.writeFile('./peopleComplete.json',fullData, 'utf-8', err=>{
+      fs.writeFile('./peopleComplete.json',fullData, err=>{
         if (err) throw err;
         console.log('json is written');
       });
@@ -39,6 +37,7 @@ let promise2 = new Promise(function(res,rej){
     }
 
     console.log(fullData);
+    console.log('second');
   },1000);
 
 })

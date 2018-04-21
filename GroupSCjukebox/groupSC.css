@@ -20,10 +20,40 @@ nav > button {
     width: 100px;
     border-radius: 5px;
     height: 20px;
+    margin: 0px 5px;
 }
 
+
 .overlay {
-    display: none;
+    height: calc(100vh - 89px);
+    padding: 25px 10% 25px;
+}
+
+
+html {
+    overflow: hidden;
+}
+
+
+h3 {
+    margin-top: 0px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: -15px;
+}
+
+
+
+
+
+html {
+    overflow: hidden;
+}
+
+
+h5 {
+    text-align: center;
+    font-family: sans-serif;
 }
 
 
@@ -32,6 +62,7 @@ button#happyBtn:hover {
 }
 
 button#happyBtn {
+    box-shadow: 2px 2px 6px -2px;
     background-color: #ff9800cf;
 }
 
@@ -42,6 +73,7 @@ button#sadBtn:hover {
 
 button#sadBtn {
     background-color: #ff9800cf;
+    box-shadow: 2px 2px 6px -2px;
 }
 
 
@@ -51,3 +83,131 @@ h1#title {
     letter-spacing: 2px;
 }
 /*         HEADER           */
+
+
+img#featImg {
+    text-align: center;
+    margin: auto;
+}
+
+.currSongInfo {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+h6.currArtist {
+    margin: 5px;
+}
+
+h4.currTitle {
+    margin: 20px 0px -5px;
+}
+
+
+span.songTitle {}
+
+
+/* bad! */
+
+ul.trackHolder {
+    list-style: none;
+    margin: 0px;
+    padding: 5px 30px 20px;
+}
+
+li.track {
+    font-family: sans-serif;
+    margin: 7px 0px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #dedede;
+}
+
+
+li.track:last-child() {
+    margin: 5px 0px;
+    padding: 5px 0px;
+    border-bottom: 0px solid #dedede;
+}
+
+.button-wrapper {
+    text-align: center;
+    /* box-shadow: 0px 0px 6px -1px black; */
+    border-top: 1px solid #00000021;
+    padding-top: 20px;
+}
+
+button#shuf {
+    display: none;
+}
+
+/* bad! */
+
+ul.trackHolder {
+    list-style: none;
+    margin: 0px;
+    padding: 5px 30px 20px;
+}
+
+li.track {
+    font-family: sans-serif;
+    margin: 7px 0px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #dedede;
+}
+
+
+.track:last-child {
+    margin: 5px 0px;
+    padding: 5px 0px;
+    border-bottom: 0px solid #dedede;
+}
+
+.button-wrapper {
+    text-align: center;
+    /* box-shadow: 0px 0px 6px -1px black; */
+    border-top: 1px solid #00000021;
+    padding-top: 20px;
+}
+
+button#shuf {
+    display: none;
+}
+
+/* li.track {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ */
+
+li.track span,a {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+h4.currTitle {
+    font-family: sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+h6.currArtist {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.button-wrapper > img {
+    width: 25px;
+    margin: 0px 10px;
+}
+
+.temp {
+    height: 36px !important;
+    position:relative;
+    top:3px;
+
+
+
+
+}

@@ -1,0 +1,16 @@
+<!-- a header -->
+<% include ./_header.ejs %>
+
+<h1>Rendering an EJS Template</h1>
+
+<div>
+    <h1>My Grocery List</h1>
+    <ul>
+    <% for (var i = 0; i < groceries.length; i++) { %>
+      <li><%= groceries[i] %></li>
+    <% } %>
+    </ul>
+</div>
+
+<!-- a footer -->
+<% include ./_footer %>

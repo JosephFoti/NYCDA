@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+  </head>
+  <body>
+    <a href="add.html"><button id="add">add</button></a>
+    <form>
+      <table>
+      <th>Students</th>
+        <tr>
+          <td>ID</td><td>Name</td><td>Email</td>
+        </tr>
+        <% for ( let i in result.rows ) { %>
+        <tr>
+          <td><%= result.rows[i].id %></td>
+          <td><%= result.rows[i].name %></td>
+          <td><%= result.rows[i].email %></td>
+
+          <td>
+            <form action="/edit/student/<%= result.rows[i].id %>" method="GET">
+              <button type="submit" id="edit">edit</button>
+            </form>
+          </td>
+
+          <td>
+            <form method="post" action="/delete/student/<%= result.rows[i].id %>">
+              <button id="delete">delete</button>
+            </form>
+          </td>
+
+        </tr>
+        <% } %>
+      </table>
+    </form>
+
+  </body>
+</html>

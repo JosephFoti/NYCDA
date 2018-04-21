@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+    <h5>
+    <form class="register" action="/register" method="POST">
+
+      First Name <input type="text" name="firstName" value=""></input></br>
+      Last Name <input type="text" name="lastName" value=""></input></br>
+      Address <input type="text" name="address" value=""></input></br>
+      City <input type="text" name="city" value=""></input></br>
+      State <input type="text" name="state" value=""></input></br>
+      Zip <input type="number" name="zip" value=""></input></br>
+      Gender <input type="radio" name="gender" value="male"></input>
+      <input type="radio" name="gender" value="female"></input>
+      <button type="submit" name="button" id="btn">Submit</button>
+
+    </form>
+  </br></br>
+    <form class="login" action="/login" method="POST">
+      First Name <input type="text" name="firstName" value=""></input></br>
+      Last Name <input type="text" name="lastName" value=""></input>
+      <button type="submit" name="button" id="btn">Submit</button>
+    </form>
+  </body>
+  <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('#btn').click(function(){
+        setTimeout(function(){
+          var inputs = document.body.getElementsByTagName('input');
+          console.log('clear')
+        },100)
+      })
+    </script>
+
+  </footer>
+</html>

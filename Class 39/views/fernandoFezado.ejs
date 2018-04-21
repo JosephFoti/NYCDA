@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Yo soy Fernando Fezado</h1>
+    <h4>Yo tengo muchos typos de sombreros!</h4>
+
+    <% for (let hat in result) { %>
+
+      <h6> Yo tengo un sombrero <%= result[hat].name %> de <%= result[hat].material %> </h6>
+
+    <% } %>
+
+
+    <div class="donations">
+      <h2>Quieres darme algo de sus sombreros? Completa esta forma!</h2>
+      <form class="" action="/donate" method="post">
+        <fieldset>
+          Nombre | <input type="text" name="name" value=""> </br>
+          El Material | <input type="text" name="material" value=""> </br>
+          La Altura | <input type="number" name="height" value=""> </br>
+          El Borde | <input type="checkbox" name="brim" value=""> </br>
+          <button type="submit" name="button">Manda</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

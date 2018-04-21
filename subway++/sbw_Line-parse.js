@@ -5,17 +5,14 @@ var lineData;
 let haveLineData;
 let haveMTAData;
 
+// Reads a json scraped from mta subway time listing the stops for the lines
 fs.readFile('./eachLine.json','utf-8',function(err,res){
   res = JSON.parse(res);
   lineData = res;
-  console.log(lineData);
+  // console.log(lineData);
   haveLineData = true
 })
-//
-// if (lineData) {
-//   console.log('we got json');
-// }
-// console.log(lineData);
+
 
 var mta = new Mta({
   key: '59226e4f5d3fa1244428c5b178a32d47', // only needed for mta.schedule() method
@@ -23,12 +20,12 @@ var mta = new Mta({
 });
 
 let clumps = [];
-let lines = [[],[],[]];
-// empty array for line clump object containing all relevant information to
+let lines = [[],[],[],[],[],[],[]];
+// empty array for line clump object containing all relevant information, Master data store for each pull of
 // same type objects
 
 
-let regs = ['^[123]'];
+let regs = ['^[1234567]'];
 // array containing clump call in RegExp ,'^[456]','^[ACE]','^[BDFM]'
 
 function LineBuilder(name,data,stopNames,stopIds) {
@@ -75,10 +72,11 @@ function lineFilter(reg,data){
 
 mta.stop().then(function (result) {
   let byStopId = Object.entries(result);
+  // console.log(byStopId);
   for (let reg of regs) {
     lineFilter(reg,byStopId);
   }
-  console.log('stop data!')
+  console.log('stop data!');
   haveMTAData = true;
   // Loops through all regexp strings to call clumps
   // let check = setInterval(function(){
@@ -109,7 +107,7 @@ let promise = new Promise((resolve,reject)=>{
 }).then(x=>{
 
   console.log('-----------------resolve!--------------------');
-  console.log(clumps);
+  // console.log(clumps);
   for (let i = 0; i<clumps.length;i++) {
     // console.log(clumps[i]['stopNames']);
     for (let j = 0 ; j<clumps[i]['stopNames'].length;j++) {
@@ -122,14 +120,41 @@ let promise = new Promise((resolve,reject)=>{
       if(lineData['line3'].includes(clumps[i]['stopNames'][j])) {
         lines[2].push(clumps[i]['data'][j]);
       }
+      if(lineData['line4'].includes(clumps[i]['stopNames'][j])) {
+        lines[3].push(clumps[i]['data'][j]);
+      }
+      if(lineData['line5'].includes(clumps[i]['stopNames'][j])) {
+        lines[4].push(clumps[i]['data'][j]);
+      }
+      if(lineData['line6'].includes(clumps[i]['stopNames'][j])) {
+        lines[5].push(clumps[i]['data'][j]);
+      }
+      if(lineData['line7'].includes(clumps[i]['stopNames'][j])) {
+        lines[6].push(clumps[i]['data'][j]);
+      }
 
       // if ()
     }
 
-    // for (let stop of clump) {
-    //   console.log(stop);
-    // }
   }
-  console.log(lines[2]);
 
+
+  console.log('------------------------ line 1 ---------------------------');
+  console.log(lines[0]);
+  // console.log('------------------------ line 2 ---------------------------');
+  // console.log(lines[1]);
+  // console.log('------------------------ line 3 ---------------------------');
+  // console.log(lines[2]);
+  // console.log('------------------------ line 4 ---------------------------');
+  // console.log(lines[3]);
+  // console.log('------------------------ line 5 ---------------------------');
+  // console.log(lines[4]);
+  // console.log('------------------------ line 6 ---------------------------');
+  // console.log(lines[5]);
+  console.log('------------------------ export ---------------------------');
+  // console.log(lines[6]);
+
+  exports.lines = lines;
+  exports.ready = true;
 })
+// module.exports = {lines};

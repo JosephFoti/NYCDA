@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="head">
+      <h1 style="text-align:center">Paymore Shoes</h1>
+      <h3>Inventory</h3>
+    </div>
+    <div class="body">
+
+      <div class="searchWrap">
+
+            <form method="GET" action="/search"><input type="text" name="search" placeholder="Search" id="search-input"><button><i class="fa fa-search">Search</i></button></form>
+
+
+      </div>
+
+    <a href="/add"><button>Add</button></a>
+
+
+
+        <table>
+          <tbody>
+            <tr>
+              <%# header %>
+              <td>Name</td>
+              <td>Material</td>
+              <td>Size</td>
+              <td>Color</td>
+              <td>Quantity</td>
+              <td>Action</td>
+            </tr>
+
+            <% for (var i in result) { %>
+
+              <tr >
+
+                <td> <%= result[i].dataValues.name %> </td>
+                <td> <%= result[i].dataValues.material %> </td>
+                <td> <%= result[i].dataValues.size %> </td>
+                <td> <%= result[i].dataValues.color %> </td>
+                <td> <%= result[i].dataValues.qty %> </td>
+
+                <td>
+                <form class="edit" action="/edit/<%= result[i].dataValues.id%>" method="post">
+                  <button type="submit" name="edit">Edit</button>
+                </form>
+                </td>
+
+                <td>
+                <form class="delete" action="/delete/<%= result[i].dataValues.id%>" method="post">
+                  <button type="submit" name="delete">Delete</button>
+                </form>
+                </td>
+
+              </tr>
+
+            <% } %>
+
+          </tbody>
+        </table>
+    </div>
+  </body>
+</html>

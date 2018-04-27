@@ -1,0 +1,26 @@
+
+<div class="currentComments">
+
+  <% for ( let y in x.rows ) { %>
+
+  <div class="comment" data-index=`${<%= y %>}`>
+
+    <h3 class="commentTitle"> <%=  x.rows[y].title  %> </h3>
+    <h5 class="commentUsername"> <%=  x.rows[y].username  %>   |   <%=  x.rows[y].date  %> </h5>
+    <div class="commentContent"> <%= x.rows[y].body %> </div>
+
+  </div>
+
+  <% } %>
+
+</div>
+
+
+<form class="submitComments" action="/comment" method="post">
+  <fieldset>
+    Username | <input type="text" name="username" value=""></br>
+    Title | <input type="text" name="title" value=""></br>
+    Comments </br> <textarea name="comment" rows="10" cols="40"></textarea>
+  </fieldset>
+    <button type="submit" name="button">Comment</button>
+</form>

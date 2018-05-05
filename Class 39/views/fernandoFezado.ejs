@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
   </head>
   <body>
     <h1>Yo soy Fernando Fezado</h1>
@@ -10,7 +12,18 @@
 
     <% for (let hat in result) { %>
 
-      <h6> Yo tengo un sombrero <%= result[hat].name %> de <%= result[hat].material %> </h6>
+      <h6> Yo tengo un sombrero <%= result[hat].name %> de <%= result[hat].material %>
+
+        <form class="edit" action="/edit/<%= result[hat].id %>" method="post">
+          <button type="submit" name="button">Edit</button>
+        </form>
+
+        <form class="delete" action="/delete/<%= result[hat].id %>" method="post">
+          <button type="submit" name="button">Delete</button>
+        </form>
+
+      </h6>
+
 
     <% } %>
 
@@ -19,10 +32,10 @@
       <h2>Quieres darme algo de sus sombreros? Completa esta forma!</h2>
       <form class="" action="/donate" method="post">
         <fieldset>
-          Nombre | <input type="text" name="name" value=""> </br>
-          El Material | <input type="text" name="material" value=""> </br>
-          La Altura | <input type="number" name="height" value=""> </br>
-          El Borde | <input type="checkbox" name="brim" value=""> </br>
+          <strong>Nombre</strong> <input type="text" name="name" value=""> </br>
+          <strong>El Material</strong> <input type="text" name="material" value=""> </br>
+          <strong>La Altura</strong> <input type="number" name="height" value=""> </br>
+          <strong>El Borde </strong ><input type="checkbox" name="brim" value=""> </br>
           <button type="submit" name="button">Manda</button>
         </fieldset>
       </form>

@@ -2,10 +2,23 @@ const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
 const {Client} = require('pg');
+const dotenv = require('dotenv');
+
+const result = dotenv.config();
+
+if (result.error) {
+  throw result.error
+}
+
+console.log(result.parsed.USR_NAME);
+console.log(result.parsed.USR_PWD);
+
 
 // -------------------------------- Step 1 | Require resources --------------------------
 
-const serverString = `postgresql://postgres:Giraffes94@localhost:5432/bba`;
+const serverString = `postgresql://${result.parsed.USR_NAME}:${result.parsed.USR_PWD}@localhost:5432/bba`;
+// const serverString = `postgresql://postres:Giraffes94localhost:5432/bba`;
+
 
 // ---------------- NOTE to be changed into private variables ---------------
 

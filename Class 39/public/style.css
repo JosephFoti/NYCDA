@@ -1,0 +1,71 @@
+body {
+    background: #efefef;
+}
+
+h1 {
+    text-align: center;
+    color: #77b1b1;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #c5c4c4;
+    color: #77b1b1;
+}
+
+h4 {
+    color: #77b1b1;
+    text-align: center;
+    font-weight: 100;
+    font-style: oblique;
+    margin-top: -15px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 18px;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing:  2px;
+    margin: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #b4c7c757;
+    text-align: center;
+}
+
+h6 .edit {
+    text-align: left;
+    margin-top: -20px;
+}
+
+h6 .delete {
+    text-align: right;
+    margin-top: -18px;
+}
+
+fieldset {
+    text-align: center;
+    border-style: dashed;
+    border-width: 1px;
+    width: calc(80% - 20px);
+    margin-left: 10%;
+    padding-left: 10px;
+}
+
+strong {
+    text-align: center;
+    margin: auto;
+}
+
+
+input[type="text"] {
+    width: calc(100% - 4px);%
+    c: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+}

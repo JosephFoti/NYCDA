@@ -8,12 +8,20 @@ const pg = require('pg');
 const app = express();
 
 // connection to client
+const Op = Sequelize.Op
 const sequelize = new Sequelize('sqz','postgres','Giraffes94',{
   host: 'localhost',
   port: '5432',
-  dialect: 'postgres'
+  dialect: 'postgres',
 //       ^ type of database used
-})
+  operatorsAliases: {
+  // Prevents sql injection ^^
+    $and : Op.and,
+    $or : Op.or,
+    $eq : Op.eq,
+    $like : Op.like
+  }
+});
 
 
 
@@ -139,6 +147,41 @@ app.post('/donate',(req,res)=>{
     res.redirect('/');
   })
 
+});
+
+app.post('/edit/:id', (req,res)=>{
+  let id = req.params.id;
+  Hat.findById(id)
+  .then(row=>{
+    return row
+  })
+  .then(row =>{
+    return res.render('edit-hat', {row});
+  })
+});
+
+app.post('/update',(req,res)=>{
+  let id = req.body.id;
+  Hat.findById(id)
+  .then((row)=>row.update({
+    name: req.body.name,
+    material: req.body.material,
+    height: req.body.height,
+    brim: req.body.brim
+  }))
+  .then(row=>{
+    res.redirect('/');
+  });
+});
+
+
+app.post('/delete/:id',(req,res)=>{
+  let id = req.params.id
+  Hat.findById(id)
+  .then(row => row.destroy(row))
+  .then(()=>{
+    return res.redirect('/')
+  });
 });
 
 app.listen(8080,function(){

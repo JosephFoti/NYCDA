@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bakery</title>
+  </head>
+  <body>
+
+    <form class="butter" action="/butter" method="post">
+      <button type="submit" name="button">Butter</button>
+      <h1><%= butter %></h1>
+
+    </form>
+
+    <form class="almond" action="/almond" method="post">
+      <button type="submit" name="button">Almond</button>
+      <h1><%= almond %></h1>
+
+    </form>
+
+    <form class="oatmeal" action="/oatmeal" method="post">
+      <button type="submit" name="button">Oatmeal</button>
+      <h1><%= oatmeal %></h1>
+
+    </form>
+
+    <form class="guilt" action="/reset" method="post">
+      <button type="submit" name="button">Reset</button>
+    </form>
+  </body>
+</html>

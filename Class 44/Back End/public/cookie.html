@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Making some cookies</title>
+  </head>
+  <body>
+
+    <button type="button" id="btn"></button>
+
+    <script type="text/javascript">
+
+    let btn = document.querySelector('#btn');
+    btn.addEventListener('click', ()=>{
+       document.cookie = 'username=john;{Max-Age=900000}'
+                          // ^ key     ^ value
+                          //             ^ expiration date
+       alert('cookie created');
+   });
+
+    </script>
+
+  </body>
+</html>

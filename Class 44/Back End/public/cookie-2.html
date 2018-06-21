@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Making some cookies</title>
+  </head>
+  <body>
+
+    <button type="button" id="btn">Set Cookies</button>
+    <button type="button" id="btn2">Get Cookies</button>
+    <div class="cookies">
+
+    </div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+    <script type="text/javascript">
+
+    $('#btn').click(()=>{
+      Cookies.set('word', 'Hudson');
+    });
+
+    $('#btn2').click(()=>{
+      var x = Cookies.get();
+      console.log(x)
+      $('.cookies').text(x.username)
+    })
+
+
+   </script>
+
+  </body>
+</html>

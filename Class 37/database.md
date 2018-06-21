@@ -76,6 +76,12 @@ insert into students (name,email) values ('Joe','Joe@email.com'),('Sasha','Sasha
   - _Insert_ insert into [table] ([Declare Values for table columns]) value ([values for data entry])_ -> Add entry into table
   - _Update_ update [tableName] set [new = "value"] where [uniqueValue = "ofTarget"] -> updates data of entry
   - _Chain Queries_ select * from [database] where [property1] = (select (id) from users where [property2 = a value]);
+  -_Add Column_ ALTER TABLE [table_name] ADD [column_name] datatype;
+  -_Drop column_ ALTER TABLE [table_name] DROP COLUMN [column_name] datatype;
+  - Alter column_ ALTER TABLE [table_name] Alter COLUMN [column_name] datatype;
+
+
+  
 
 - Query Method
     -  Can list inline variables with concatination variables $+ (base 1++)  

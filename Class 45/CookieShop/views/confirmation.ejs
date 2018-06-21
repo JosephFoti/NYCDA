@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <%- include partials/_header.ejs %>
+
+  <div class="">
+    <ul>
+
+    <% for (var i = 0; i < resNumber; i++) { %>
+
+
+      <li data-item=<%= i %>> <%=orderKey[i]%> | <%=orderValue[i]%> </li>
+
+
+    <% } %>
+
+    </ul>
+    <button type="button" name="button"><a href="/">Return to Shop</a></button>
+  </div>
+
+
+
+
+
+
+    <%- include partials/_footer.ejs %>
+
+  </body>
+</html>

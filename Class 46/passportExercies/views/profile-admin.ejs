@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile-Admin</title>
+  </head>
+  <body>
+    <div class="about">
+      <h1>ADMIN</h1>
+<br><br>
+      <%= user.username %><br>
+      <% if (user.emails) { %>
+        <%= user.emails[0].value %><br>
+      <% } %>
+      <%= user.cell %><br>
+      <%= user.id %><br>
+      <%= user.admin %><br>
+
+    </div>
+  </body>
+</html>

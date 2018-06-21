@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Faux Store</title>
+  </head>
+  <body>
+
+    <%- include partials/_header.ejs %>
+
+    <form class="" action="/order" method="post">
+      <label>Username:</label><input type="text" name="username">
+      <br><br>
+      <label>Shoes:</label>
+        <select type="list" name="shoes">
+          <option></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+
+      <label>Bags:</label>
+        <select type="list" name="bags">
+          <option></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      <label>Pants:</label>
+        <select type="list" name="pants">
+          <option></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      <label>T-Shirts:</label>
+        <select type="list" name="shirts">
+          <option></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      <br><br>
+      <button type="submit" name="button">Place Order</button>
+    </form>
+
+    <%- include partials/_footer.ejs %>
+
+    <div class="">
+      <ul>
+
+        <% for (var i = 0; i < resNumber; i++) { %>
+
+
+          <li data-item=<%= i %>> <%=orderKey[i]%> | <%=orderValue[i]%> </li>
+
+
+        <% } %>
+        
+      </ul>
+    </div>
+
+  </body>
+</html>
